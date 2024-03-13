@@ -1,0 +1,38 @@
+﻿<Window x:Class="PR2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="900">
+    <Grid x:Name="MainGrid" Background="AliceBlue" PreviewMouseMove="Grid_PreviewMouseMove"
+          PreviewMouseDown="Grid_PreviewMouseMove">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock FontFamily="Comic Sans MS" FontSize="30" FontWeight="Bold" 
+                       HorizontalAlignment="Center">
+        Авторизация
+            </TextBlock>
+            <TextBlock FontFamily="MS Reference Sans Serif" FontSize="20"
+                       HorizontalAlignment="Center">
+        Введите логин:
+            </TextBlock>
+            <TextBox x:Name="Login">
+            </TextBox>
+            <TextBlock FontFamily="MS Reference Sans Serif" FontSize="20"
+                       HorizontalAlignment="Center">
+        Введите пароль:
+            </TextBlock>
+            <TextBox x:Name="Password">
+            </TextBox>
+            <Button FontFamily="MS Reference Sans Serif" FontSize="20" 
+                    x:Name="Send" Click="Send_click" Margin="0,10,0,0"
+                    FontWeight="DemiBold" Background="#326aad" 
+                    Foreground="AliceBlue">
+                Отправить
+            </Button>
+        </StackPanel>
+        <Image Source="E:\учеба\3 курс\практика\PR2\PR2\logo.png" Width="150" 
+               HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15"/>
+    </Grid>
+</Window>
